@@ -10,7 +10,7 @@ The `chosen-rails` gem integrates the `Chosen` with the Rails asset pipeline.
 
 Include `chosen-rails` in Gemefile
 
-    gem 'chosen-rails'
+    gem 'chosen-rails', :git => 'https://github.com/lululau/chosen-rails', :branch => 'bootstrap3'
 
 For Rails 4 project, it is required to add [compass-rails](https://github.com/Compass/compass-rails) gem explicitly.
 
@@ -34,9 +34,9 @@ Or with Prototype
 
 ### Include chosen stylesheet assets
 
-Add to your `app/assets/stylesheets/application.css`
+Add to your `app/assets/stylesheets/xxxx.css.less`
 
-    *= require chosen
+	@import "chosen";
 
 ### Enable chosen javascript by specific css class
 
